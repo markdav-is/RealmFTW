@@ -8,7 +8,7 @@ using RealmFTW.Models;
 
 namespace RealmFTW.Services
 {
-    class RealmService
+    public class RealmService
     {
         public Repo GetRepo(string name) {
             var realm = Realm.GetInstance();

@@ -9,12 +9,13 @@ using Newtonsoft.Json;
 
 namespace RealmFTW.Services
 {
-    class NetDataService
+    public class NetDataService
     {
         public IEnumerable<Repo> GetRepos(string url)
         {
             using (var wc = new WebClient())
             {
+                wc.Headers.Add("User-Agent: Other");
                 var json =  wc.DownloadString(url);
                 var list = JsonConvert.DeserializeObject<IEnumerable<Repo>>(json);
                 return list;

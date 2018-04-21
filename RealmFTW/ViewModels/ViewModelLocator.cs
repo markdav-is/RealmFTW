@@ -41,6 +41,10 @@ namespace RealmFTW.ViewModels
 
         public NavigationServiceEx NavigationService => ServiceLocator.Current.GetInstance<NavigationServiceEx>();
 
+        public NetDataService NetDataService => ServiceLocator.Current.GetInstance<NetDataService>();
+
+        public RealmService RealmService => ServiceLocator.Current.GetInstance<RealmService>();
+
         public void Register<VM, V>()
             where VM : class
         {
