@@ -180,6 +180,7 @@ namespace RealmFTW.ViewModels
             _primaryItems.Add(new ShellNavigationItem("Shell_Main".GetLocalized(), Symbol.Document, typeof(MainViewModel).FullName));
             _primaryItems.Add(new ShellNavigationItem("Shell_ImageGallery".GetLocalized(), Symbol.Document, typeof(ImageGalleryViewModel).FullName));
             _secondaryItems.Add(new ShellNavigationItem("Shell_Settings".GetLocalized(), Symbol.Setting, typeof(SettingsViewModel).FullName));
+            _primaryItems.Add(new ShellNavigationItem("Shell_Repos".GetLocalized(), Symbol.Document, typeof(ReposViewModel).FullName));
         }
 
         private void ItemSelected(HamburgerMenuItemInvokedEventArgs args)

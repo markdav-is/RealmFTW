@@ -206,4 +206,16 @@
     <value>Settings</value>
     <comment>Navigation view item name for Settings</comment>
   </data>
+  <data name="Repos_Title.Text" xml:space="preserve">
+    <value>Repos</value>
+    <comment>Page title for Repos</comment>
+  </data>
+  <data name="Repos_NoSelection.Text" xml:space="preserve">
+    <value>Select an item from the list.</value>
+    <comment>No selection text for Repos</comment>
+  </data>
+  <data name="Shell_Repos" xml:space="preserve">
+    <value>Repos</value>
+    <comment>Navigation view item name for Repos</comment>
+  </data>
 </root>

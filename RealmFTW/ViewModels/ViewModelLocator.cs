@@ -17,11 +17,17 @@ namespace RealmFTW.ViewModels
 
             SimpleIoc.Default.Register(() => new NavigationServiceEx());
             SimpleIoc.Default.Register<ShellViewModel>();
+            SimpleIoc.Default.Register<NetDataService>();
+            SimpleIoc.Default.Register<RealmService>();
+
             Register<MainViewModel, MainPage>();
             Register<ImageGalleryViewModel, ImageGalleryPage>();
             Register<ImageGalleryDetailViewModel, ImageGalleryDetailPage>();
             Register<SettingsViewModel, SettingsPage>();
+            Register<ReposViewModel, ReposPage>();
         }
+
+        public ReposViewModel ReposViewModel => ServiceLocator.Current.GetInstance<ReposViewModel>();
 
         public SettingsViewModel SettingsViewModel => ServiceLocator.Current.GetInstance<SettingsViewModel>();
 
